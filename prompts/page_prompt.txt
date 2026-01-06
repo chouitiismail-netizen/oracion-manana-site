@@ -1,0 +1,31 @@
+Write ONE Spanish MDX page for an SEO site about "Oraciones para dormir".
+
+RULES:
+- 100% ORIGINAL writing. Do NOT copy or paraphrase any existing article.
+- No miracle guarantees. No medical claims.
+- Tone: gentle, calm, non-judgmental.
+- No long Bible quotes. Avoid quotes completely if possible.
+- Use neutral LatAm Spanish.
+
+OUTPUT:
+Return ONLY valid MDX with frontmatter + body.
+
+FRONTMATTER (MUST include these fields):
+slug: "<<SLUG>>"
+title: "<<TITLE>>"
+metaTitle: "<<METATITLE>>" (<=60 chars)
+metaDescription: "<<METADESC>>" (<=155 chars)
+keywords: ["...", "...", "...", "..."]
+publishedAt: "2026-01-02"
+updatedAt: "2026-01-02"
+category: "dormir"
+
+BODY STRUCTURE (must follow):
+1) Empathy intro (40-60 words)
+2) Oración (6-10 lines, each line new line)
+3) Reflexión (150-250 words, specific to topic)
+4) Pequeña acción (1 sentence)
+5) FAQ (3-5 Q/A, each answer 1-2 sentences)
+6) Soft CTA (1-2 sentences + link text “Jesús Contigo”, no aggressive selling)
+
+Topic keyword: "<<KEYWORD>>"
