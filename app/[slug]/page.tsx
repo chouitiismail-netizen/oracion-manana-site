@@ -21,10 +21,23 @@ export async function generateMetadata({
         };
     }
 
+    const baseUrl = "https://oracionparadormirenpaz.com";
+
     return {
         title: page.metaTitle || page.title,
         description: page.metaDescription,
         keywords: page.keywords,
+        alternates: {
+            canonical: `${baseUrl}/${slug}`,
+        },
+        openGraph: {
+            title: page.metaTitle || page.title,
+            description: page.metaDescription,
+            url: `${baseUrl}/${slug}`,
+            siteName: "Oraciones para dormir en paz",
+            locale: "es_ES",
+            type: "article",
+        },
     };
 }
 
