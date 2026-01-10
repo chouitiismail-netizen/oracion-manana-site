@@ -37,7 +37,7 @@ export async function generateMetadata({
             title: page.metaTitle || page.title,
             description: page.metaDescription,
             url: `${baseUrl}/${slug}`,
-            siteName: "Oraciones de protección",
+            siteName: "Oraciones por la familia",
             locale: "es_ES",
             type: "article",
         },

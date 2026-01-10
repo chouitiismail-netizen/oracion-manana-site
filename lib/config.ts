@@ -1,25 +1,25 @@
 // Curated content configuration for homepage sections
 
 export const START_HERE_SLUGS = [
-  'oraciones-de-proteccion',
-  'oracion-de-proteccion-para-la-familia',
-  'oracion-de-proteccion-para-el-hogar',
-  'oracion-para-pedir-proteccion-a-dios',
-  'oracion-para-proteccion-en-la-noche',
-  'oracion-de-proteccion-corta',
+  'oraciones-por-la-familia',
+  'oracion-por-la-familia-unida',
+  'oracion-para-bendecir-a-mi-familia',
+  'oracion-por-la-paz-en-el-hogar',
+  'oracion-por-mi-familia-y-mis-hijos',
+  'oracion-para-bendecir-el-hogar',
 ];
 
 export const FEATURED_SLUGS = [
-  'oracion-de-proteccion-contra-el-mal',
-  'oracion-de-proteccion-para-mis-hijos',
-  'oracion-para-viajar-con-proteccion',
-  'oracion-de-proteccion-en-el-trabajo',
-  'oracion-a-san-miguel-arcangel-para-proteccion',
-  'oracion-para-proteccion-y-paz-interior',
+  'oracion-por-la-familia-en-crisis',
+  'oracion-para-la-reconciliacion-familiar',
+  'oracion-para-sanar-heridas-familiares',
+  'oracion-por-la-unidad-familiar',
+  'oracion-por-un-hijo-rebelde',
+  'oracion-para-dar-gracias-por-la-familia',
 ];
 
 // Primary prayer for main CTA
-export const PRIMARY_PRAYER_SLUG = 'oraciones-de-proteccion';
+export const PRIMARY_PRAYER_SLUG = 'oraciones-por-la-familia';
 
 // Quick action categories with icons and slugs
 export interface QuickAction {
@@ -30,20 +30,20 @@ export interface QuickAction {
 }
 
 export const QUICK_ACTIONS: QuickAction[] = [
-  { id: 'paz', label: 'Paz', icon: 'anxiety', slug: 'oracion-para-dormir-en-paz' },
-  { id: 'gratitud', label: 'Gratitud', icon: 'gratitude', slug: 'oracion-para-terminar-el-dia-con-gratitud' },
-  { id: 'proteccion', label: 'Protección', icon: 'protection', slug: 'oracion-para-proteger-mi-hogar-en-la-noche' },
-  { id: 'familia', label: 'Familia', icon: 'family', slug: 'oracion-por-mi-familia-antes-de-dormir' },
-  { id: 'confianza', label: 'Confianza', icon: 'trust', slug: 'oracion-para-confiar-en-dios-al-final-del-dia' },
+  { id: 'unidad', label: 'Unidad', icon: 'family', slug: 'oracion-por-la-familia-unida' },
+  { id: 'bendicion', label: 'Bendición', icon: 'gratitude', slug: 'oracion-para-bendecir-a-mi-familia' },
+  { id: 'paz', label: 'Paz', icon: 'anxiety', slug: 'oracion-por-la-paz-en-el-hogar' },
+  { id: 'reconciliacion', label: 'Reconciliación', icon: 'trust', slug: 'oracion-para-la-reconciliacion-familiar' },
+  { id: 'proteccion', label: 'Protección', icon: 'protection', slug: 'oracion-para-proteger-a-la-familia' },
 ];
 
 // Daily verse for "Santo del día" equivalent
 export const DAILY_VERSES = [
-  { text: 'En paz me acuesto y me duermo, porque solo tú, Señor, me haces vivir confiado.', reference: 'Salmo 4:8' },
-  { text: 'Confía en el Señor de todo corazón y no te apoyes en tu propia inteligencia.', reference: 'Proverbios 3:5' },
-  { text: 'Vengan a mí todos los que están cansados y agobiados, y yo les daré descanso.', reference: 'Mateo 11:28' },
-  { text: 'No se inquieten por nada; más bien, en toda ocasión, con oración y ruego, presenten sus peticiones a Dios.', reference: 'Filipenses 4:6' },
-  { text: 'El Señor es mi pastor, nada me falta; en verdes praderas me hace descansar.', reference: 'Salmo 23:1-2' },
+  { text: 'Que el Señor te bendiga y te proteja; que el Señor te muestre su favor y tenga compasión de ti.', reference: 'Números 6:24-25' },
+  { text: 'Yo y mi casa serviremos al Señor.', reference: 'Josué 24:15' },
+  { text: 'Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.', reference: 'Proverbios 22:6' },
+  { text: 'El amor es paciente, es bondadoso; el amor no es envidioso ni jactancioso ni orgulloso.', reference: '1 Corintios 13:4' },
+  { text: 'Donde dos o tres se reúnen en mi nombre, allí estoy yo en medio de ellos.', reference: 'Mateo 18:20' },
 ];
 
 export function getDailyVerse() {

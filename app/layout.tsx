@@ -20,14 +20,14 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://REPLACE_AFTER_VERCE
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "Oraciones de protección - Oraciones para pedir protección a Dios",
-  description: "Oraciones originales para pedir protección para el hogar, la familia, los viajes y el descanso, confiando en Dios cada día.",
-  keywords: ["oraciones de protección", "oraciones católicas", "protección divina", "oraciones para la familia", "protección espiritual"],
+  title: "Oraciones por la familia - Oraciones para bendecir el hogar y la familia",
+  description: "Oraciones originales para bendecir el hogar, pedir unidad y reconciliación, y confiar la familia a Dios cada día.",
+  keywords: ["oraciones por la familia", "oraciones católicas", "unidad familiar", "bendición del hogar", "reconciliación familiar"],
   openGraph: {
-    title: "Oraciones de protección",
-    description: "Oraciones originales para pedir protección para el hogar, la familia, los viajes y el descanso, confiando en Dios cada día.",
+    title: "Oraciones por la familia",
+    description: "Oraciones originales para bendecir el hogar, pedir unidad y reconciliación, y confiar la familia a Dios cada día.",
     url: baseUrl,
-    siteName: "Oraciones de protección",
+    siteName: "Oraciones por la familia",
     locale: "es_ES",
     type: "website",
   },

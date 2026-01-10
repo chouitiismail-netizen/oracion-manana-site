@@ -84,7 +84,7 @@ export function searchSpiritualPages(query: string): PageData[] {
     );
 }
 
-export function getRelatedSpiritualPages(currentSlug: string, category: string, limit = 3): PageData[] {
+export function getRelatedSpiritualPages(currentSlug: string, category: string, limit = 6): PageData[] {
     return getSpiritualPages()
         .filter(p => p.slug !== currentSlug && p.category === category)
         .slice(0, limit);

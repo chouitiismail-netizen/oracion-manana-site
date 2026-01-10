@@ -64,10 +64,10 @@ export default function HomeClient({ allPages }: HomeClientProps) {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
-        title="Oraciones de protección"
-        subtitle="Oraciones originales para pedir protección para el hogar, la familia, los viajes y el descanso, confiando en Dios cada día"
+        title="Oraciones por la familia"
+        subtitle="Oraciones originales para bendecir el hogar, pedir unidad y reconciliación, y confiar la familia a Dios cada día"
         ctaText="Comenzar a orar"
-        ctaHref={primaryPrayer ? `/${primaryPrayer.slug}` : '/oraciones-de-proteccion'}
+        ctaHref={primaryPrayer ? `/${primaryPrayer.slug}` : '/oraciones-por-la-familia'}
       />
 
       {/* Main Content */}
@@ -80,7 +80,7 @@ export default function HomeClient({ allPages }: HomeClientProps) {
                 Comienza aquí
               </h2>
               <p className="text-[var(--muted)]">
-                Las oraciones esenciales para pedir protección a Dios cada día
+                Las oraciones esenciales para bendecir y proteger a tu familia
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -99,7 +99,7 @@ export default function HomeClient({ allPages }: HomeClientProps) {
                 Destacadas
               </h2>
               <p className="text-[var(--muted)]">
-                Oraciones poderosas para la familia, el trabajo, los viajes y la paz interior
+                Oraciones poderosas para la unidad, reconciliación y paz en el hogar
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
