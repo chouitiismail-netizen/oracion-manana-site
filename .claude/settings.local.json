@@ -15,7 +15,8 @@
       "Bash(node scripts/generate-hijos-content.js:*)",
       "Bash(curl:*)",
       "Bash(node:*)",
-      "Bash(Remove-Item \"content\\\\pages\\\\oracion-*.mdx\" -Exclude \"oracion-por-mi-matrimonio.mdx\",\"oracion-por-mi-esposo.mdx\",\"oracion-por-mi-esposa.mdx\",\"oracion-para-*.mdx\",\"oracion-por-el-*.mdx\",\"oracion-por-crisis-*.mdx\",\"oracion-por-la-*.mdx\",\"oracion-por-problemas-*.mdx\",\"oracion-por-infidelidad-*.mdx\",\"oracion-por-unidad-*.mdx\",\"oracion-por-discusiones-*.mdx\",\"oracion-corta-*.mdx\")"
+      "Bash(Remove-Item \"content\\\\pages\\\\oracion-*.mdx\" -Exclude \"oracion-por-mi-matrimonio.mdx\",\"oracion-por-mi-esposo.mdx\",\"oracion-por-mi-esposa.mdx\",\"oracion-para-*.mdx\",\"oracion-por-el-*.mdx\",\"oracion-por-crisis-*.mdx\",\"oracion-por-la-*.mdx\",\"oracion-por-problemas-*.mdx\",\"oracion-por-infidelidad-*.mdx\",\"oracion-por-unidad-*.mdx\",\"oracion-por-discusiones-*.mdx\",\"oracion-corta-*.mdx\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''content\\\\pages'' -Filter ''*.mdx'' | Where-Object { $_Name -ne ''aviso-legal.mdx'' -and $_Name -ne ''politica-de-privacidad.mdx'' } | Remove-Item -Force\")"
     ]
   }
 }

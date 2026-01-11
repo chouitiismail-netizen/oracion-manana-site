@@ -1,25 +1,25 @@
 // Curated content configuration for homepage sections
 
 export const START_HERE_SLUGS = [
-  'oraciones-por-el-matrimonio',
-  'oracion-por-mi-matrimonio',
-  'oracion-por-mi-esposo',
-  'oracion-por-mi-esposa',
-  'oracion-para-fortalecer-el-matrimonio',
-  'oracion-por-el-amor-en-el-matrimonio',
+  'oraciones-de-la-manana',
+  'oracion-de-la-manana',
+  'oracion-para-empezar-el-dia-con-fe',
+  'oracion-al-despertar',
+  'oracion-para-ofrecer-el-dia-a-dios',
+  'oracion-de-la-manana-corta',
 ];
 
 export const FEATURED_SLUGS = [
-  'oracion-para-salvar-el-matrimonio',
-  'oracion-por-crisis-matrimonial',
-  'oracion-para-reconciliacion-en-el-matrimonio',
-  'oracion-para-sanar-heridas-de-pareja',
-  'oracion-para-restaurar-la-confianza',
-  'oracion-por-la-paz-en-el-hogar',
+  'oracion-de-la-manana-catolica',
+  'oracion-para-comenzar-el-dia-en-paz',
+  'oracion-para-poner-el-dia-en-manos-de-dios',
+  'oracion-de-la-manana-para-la-familia',
+  'oracion-de-la-manana-para-los-hijos',
+  'oracion-de-la-manana-para-el-trabajo',
 ];
 
 // Primary prayer for main CTA
-export const PRIMARY_PRAYER_SLUG = 'oraciones-por-el-matrimonio';
+export const PRIMARY_PRAYER_SLUG = 'oraciones-de-la-manana';
 
 // Quick action categories with icons and slugs
 export interface QuickAction {
@@ -30,20 +30,20 @@ export interface QuickAction {
 }
 
 export const QUICK_ACTIONS: QuickAction[] = [
-  { id: 'fortalecer', label: 'Fortalecer', icon: 'protection', slug: 'oracion-para-fortalecer-el-matrimonio' },
-  { id: 'comunicacion', label: 'Comunicación', icon: 'family', slug: 'oracion-para-la-comunicacion-en-pareja' },
-  { id: 'perdon', label: 'Perdón', icon: 'gratitude', slug: 'oracion-para-perdonar-en-el-matrimonio' },
-  { id: 'paz', label: 'Paz', icon: 'trust', slug: 'oracion-por-la-paz-en-el-hogar' },
-  { id: 'unidad', label: 'Unidad', icon: 'anxiety', slug: 'oracion-por-unidad-matrimonial' },
+  { id: 'fe', label: 'Fe', icon: 'protection', slug: 'oracion-para-empezar-el-dia-con-fe' },
+  { id: 'gratitud', label: 'Gratitud', icon: 'gratitude', slug: 'oracion-de-la-manana-para-agradecer' },
+  { id: 'paz', label: 'Paz', icon: 'trust', slug: 'oracion-para-comenzar-el-dia-en-paz' },
+  { id: 'familia', label: 'Familia', icon: 'family', slug: 'oracion-de-la-manana-para-la-familia' },
+  { id: 'proteccion', label: 'Protección', icon: 'anxiety', slug: 'oracion-de-la-manana-para-la-proteccion' },
 ];
 
-// Daily verse for "Santo del día" equivalent
+// Daily verse for morning devotion
 export const DAILY_VERSES = [
-  { text: 'Lo que Dios unió, que no lo separe el hombre.', reference: 'Marcos 10:9' },
-  { text: 'El amor es paciente, es bondadoso. El amor no es envidioso ni jactancioso ni orgulloso.', reference: '1 Corintios 13:4' },
-  { text: 'Sobre todo, ámense los unos a los otros profundamente, porque el amor cubre multitud de pecados.', reference: '1 Pedro 4:8' },
-  { text: 'Maridos, amen a sus esposas, así como Cristo amó a la iglesia y se entregó por ella.', reference: 'Efesios 5:25' },
-  { text: 'Más valen dos que uno, porque obtienen más fruto de su esfuerzo.', reference: 'Eclesiastés 4:9' },
+  { text: 'Este es el día que hizo el Señor; regocijémonos y alegrémonos en él.', reference: 'Salmo 118:24' },
+  { text: 'Por la mañana hazme saber de tu gran amor, porque en ti he puesto mi confianza.', reference: 'Salmo 143:8' },
+  { text: 'El amor del Señor nunca se acaba, y nunca faltan sus bondades. Cada mañana se renuevan.', reference: 'Lamentaciones 3:22-23' },
+  { text: 'Muy de mañana, cuando todavía estaba oscuro, Jesús se levantó, salió de la casa y se fue a un lugar solitario, donde se puso a orar.', reference: 'Marcos 1:35' },
+  { text: 'Pero yo cantaré de tu poder, y por la mañana alabaré tu amor; porque tú eres mi refugio en momentos de angustia.', reference: 'Salmo 59:16' },
 ];
 
 export function getDailyVerse() {

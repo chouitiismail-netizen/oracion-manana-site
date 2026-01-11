@@ -20,21 +20,21 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://REPLACE_AFTER_VERCE
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "Oraciones por el matrimonio - Oraciones para fortalecer la relación de pareja",
-  description: "Oraciones originales para fortalecer la relación, sanar heridas, recuperar la confianza y vivir el amor con Dios en el centro.",
-  keywords: ["oraciones por el matrimonio", "oraciones por mi esposo", "oraciones por mi esposa", "oraciones católicas para parejas", "oraciones para fortalecer el matrimonio"],
+  title: "Oraciones de la mañana - Oraciones para empezar el día con fe y paz",
+  description: "Oraciones originales para empezar el día con fe, calma y confianza en Dios. Para ofrecer el día, pedir protección, tomar decisiones y vivir en paz desde el amanecer.",
+  keywords: ["oraciones de la mañana", "oracion de la mañana", "oracion al despertar", "oraciones católicas", "oracion para empezar el dia"],
   openGraph: {
-    title: "Oraciones por el matrimonio",
-    description: "Oraciones originales para fortalecer la relación, sanar heridas, recuperar la confianza y vivir el amor con Dios en el centro.",
+    title: "Oraciones de la mañana",
+    description: "Oraciones originales para empezar el día con fe, calma y confianza en Dios. Para ofrecer el día, pedir protección, tomar decisiones y vivir en paz desde el amanecer.",
     url: baseUrl,
-    siteName: "Oraciones por el matrimonio",
+    siteName: "Oraciones de la mañana",
     locale: "es_ES",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Oraciones por el matrimonio",
-    description: "Oraciones originales para fortalecer la relación, sanar heridas, recuperar la confianza y vivir el amor con Dios en el centro.",
+    title: "Oraciones de la mañana",
+    description: "Oraciones originales para empezar el día con fe, calma y confianza en Dios. Para ofrecer el día, pedir protección, tomar decisiones y vivir en paz desde el amanecer.",
   },
 };
 
