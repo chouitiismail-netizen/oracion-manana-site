@@ -1,0 +1,64 @@
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   🚀 QUICK DEPLOYMENT - Oraciones de la Mañana              ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ PRE-FLIGHT CHECK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [✓] Code committed to git
+  [✓] Pushed to GitHub
+  [✓] Build passes (npm run build)
+  [✓] 26 pages ready
+
+
+🌐 DEPLOY IN 5 STEPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  Go to: https://vercel.com/
+    → Click "Add New Project"
+
+2️⃣  Import from GitHub
+    → Select: oracion-manana-site
+    → Click "Import"
+
+3️⃣  Deploy Settings (auto-detected)
+    Framework: Next.js ✓
+    Build: npm run build ✓
+    → Click "Deploy"
+
+4️⃣  Wait 2-3 minutes
+    → Copy your URL: https://oracion-manana-site-XXXX.vercel.app
+
+5️⃣  Add Environment Variable
+    → Project Settings → Environment Variables
+    → Add:
+      Name: NEXT_PUBLIC_SITE_URL
+      Value: [paste your deployment URL]
+    → Save → Redeploy
+
+
+🔍 VERIFY DEPLOYMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Visit: https://your-url.vercel.app/
+  Check: Hero shows "Oraciones de la mañana" ✓
+  
+  Visit: https://your-url.vercel.app/sitemap.xml
+  Check: Shows all 26 pages ✓
+
+
+📊 SUBMIT TO GOOGLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. https://search.google.com/search-console/
+  2. Add Property → URL prefix → Verify
+  3. Sitemaps → Submit: sitemap.xml
+
+
+✨ DONE!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Your site is LIVE and ready for organic traffic!
+
+  📖 Full guide: See DEPLOYMENT_GUIDE.md
+
