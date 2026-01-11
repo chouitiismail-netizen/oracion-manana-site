@@ -64,10 +64,10 @@ export default function HomeClient({ allPages }: HomeClientProps) {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
-        title="Oraciones por el matrimonio"
-        subtitle="Oraciones originales para fortalecer la relación, sanar heridas, recuperar la confianza y vivir el amor con Dios en el centro"
+        title="Oraciones de la mañana"
+        subtitle="Oraciones originales para empezar el día con fe, calma y confianza en Dios. Para ofrecer el día, pedir protección, tomar decisiones y vivir en paz desde el amanecer"
         ctaText="Comenzar a orar"
-        ctaHref={primaryPrayer ? `/${primaryPrayer.slug}` : '/oraciones-por-el-matrimonio'}
+        ctaHref={primaryPrayer ? `/${primaryPrayer.slug}` : '/oraciones-de-la-manana'}
       />
 
       {/* Main Content */}
@@ -77,10 +77,10 @@ export default function HomeClient({ allPages }: HomeClientProps) {
           <section>
             <div className="mb-8">
               <h2 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-2">
-                Comienza aquí
+                Comienza tu día
               </h2>
               <p className="text-[var(--muted)]">
-                Las oraciones esenciales para fortalecer tu matrimonio
+                Las oraciones esenciales para empezar cada mañana con Dios
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,10 +96,10 @@ export default function HomeClient({ allPages }: HomeClientProps) {
           <section>
             <div className="mb-8">
               <h2 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-2">
-                Destacadas
+                Oraciones destacadas
               </h2>
               <p className="text-[var(--muted)]">
-                Oraciones poderosas para sanar, reconciliar y restaurar tu matrimonio
+                Oraciones poderosas para cada situación de tu mañana
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
