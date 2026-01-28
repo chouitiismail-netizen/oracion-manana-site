@@ -1,0 +1,19 @@
+{
+  "name": "Oraciones de la mañana",
+  "short_name": "Oraciones",
+  "description": "Oraciones originales para empezar el día con fe, calma y confianza en Dios.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#d17b27",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["lifestyle", "religion"]
+}

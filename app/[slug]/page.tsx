@@ -4,12 +4,13 @@ import type { Metadata } from 'next';
 import { getAllPages, getPageBySlug, getRelatedSpiritualPages } from '../../lib/content';
 import Container from '../../components/ui/Container';
 import Card from '../../components/ui/Card';
+import { ArticleJsonLd, BreadcrumbJsonLd } from '../../components/JsonLd';
 
 export async function generateStaticParams() {
     return getAllPages().map((p) => ({ slug: p.slug }));
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://REPLACE_AFTER_VERCEL.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://oracion-manana-site.vercel.app";
 
 export async function generateMetadata({
     params,
@@ -41,6 +42,11 @@ export async function generateMetadata({
             locale: "es_ES",
             type: "article",
         },
+        twitter: {
+            card: "summary",
+            title: page.metaTitle || page.title,
+            description: page.metaDescription,
+        },
     };
 }
 
@@ -63,14 +69,33 @@ export default async function ArticlePage({
     const sections = parseContent(page.content);
 
     return (
-        <div className="min-h-screen pb-8">
-            <Container maxWidth="md" className="pt-6 space-y-6">
-                {/* Breadcrumb - only for spiritual pages */}
-                {!isLegal && (
-                    <nav className="flex items-center gap-2 text-sm text-[var(--muted)]">
-                        <Link href="/" className="hover:text-[var(--foreground)]">Inicio</Link>
-                        <span>›</span>
-                        <span className="text-[var(--foreground)] capitalize">{page.category}</span>
+        <>
+            {/* JSON-LD Structured Data */}
+            <ArticleJsonLd
+                title={page.title}
+                description={page.metaDescription}
+                url={`${baseUrl}/${slug}`}
+                datePublished={page.publishedAt}
+                dateModified={page.updatedAt}
+                category={page.category}
+            />
+            {!isLegal && (
+                <BreadcrumbJsonLd
+                    items={[
+                        { name: "Inicio", url: baseUrl },
+                        { name: page.category.charAt(0).toUpperCase() + page.category.slice(1), url: `${baseUrl}/#${page.category}` },
+                        { name: page.title, url: `${baseUrl}/${slug}` }
+                    ]}
+                />
+            )}
+            <div className="min-h-screen pb-8">
+                <Container maxWidth="md" className="pt-6 space-y-6">
+                    {/* Breadcrumb - only for spiritual pages */}
+                    {!isLegal && (
+                        <nav className="flex items-center gap-2 text-sm text-[var(--muted)]">
+                            <Link href="/" className="hover:text-[var(--foreground)]">Inicio</Link>
+                            <span>›</span>
+                            <span className="text-[var(--foreground)] capitalize">{page.category}</span>
                     </nav>
                 )}
 
@@ -158,7 +183,8 @@ export default async function ArticlePage({
                     </Link>
                 </div>
             </Container>
-        </div>
+            </div>
+        </>
     );
 }
 

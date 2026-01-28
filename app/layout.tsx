@@ -16,13 +16,23 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://REPLACE_AFTER_VERCEL.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://oracion-manana-site.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: "Oraciones de la mañana - Oraciones para empezar el día con fe y paz",
   description: "Oraciones originales para empezar el día con fe, calma y confianza en Dios. Para ofrecer el día, pedir protección, tomar decisiones y vivir en paz desde el amanecer.",
   keywords: ["oraciones de la mañana", "oracion de la mañana", "oracion al despertar", "oraciones católicas", "oracion para empezar el dia"],
+  alternates: {
+    canonical: baseUrl,
+  },
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  other: {
+    "theme-color": "#d17b27",
+  },
   openGraph: {
     title: "Oraciones de la mañana",
     description: "Oraciones originales para empezar el día con fe, calma y confianza en Dios. Para ofrecer el día, pedir protección, tomar decisiones y vivir en paz desde el amanecer.",
